@@ -29,11 +29,20 @@ class TestCalc:
     @pytest.mark.parametrize("a, b, result",datas[0],ids=datas[1])
     def test_add(self, a, b, result):
         print(f"a = {a}, b = {b}, result = {result}")
-        assert result == self.calc.add(a, b)
+        assert result == round(self.calc.add(a, b),4)
 
     # @pytest.mark.login
     @pytest.mark.parametrize("a,b,result",datas[2],ids=datas[3])
     def test_div(self, a, b, result):
         # calc = Calculator()
-        print(f"a = {a}, b = {b}, result = {result}")
-        assert result == self.calc.div(a, b)
+        # print(f"a = {a}, b = {b}, result = {result}")
+        # assert result == self.calc.div(a, b)
+        #
+        # with pytest.raises(ZeroDivisionError):
+        #     result == self.calc.div(a,b)
+        try:
+            assert result == self.calc.div(a,b)
+        except ZeroDivisionError as erro:
+            print(erro)
+            pass
+

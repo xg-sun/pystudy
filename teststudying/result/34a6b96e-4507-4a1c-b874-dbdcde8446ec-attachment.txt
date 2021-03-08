@@ -1,0 +1,3 @@
+资源准备：setup module
+资源准备：setup function
+case1

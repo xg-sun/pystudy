@@ -13,4 +13,7 @@ div:
     - [200,100,2]
     - [-5,-1,5]
     - [0.2,0.1,2]
-  ids: ['int','bignum','negativenum','minus']
+    - [2,0,0]
+    - [-1,0,0]
+    - [0,0,0]
+  ids: ['int','bignum','negativenum','minus', 'divzero', 'fszero', 'zerozero']

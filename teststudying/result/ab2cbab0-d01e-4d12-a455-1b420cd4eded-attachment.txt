@@ -1,0 +1,1 @@
+{'add': {'datas': [[1, 1, 2], [100, 100, 200], [1, 0, 1], [0.1, 0.2, 0.3], [-1, -1, -2]], 'ids': ['int', 'bignum', 'zero', 'minus', 'negativenum']}, 'div': {'datas': [[1, 1, 1], [200, 100, 2], [-5, -1, 5], [0.2, 0.1, 2], [2, 0, 0], [-1, 0, 0], [0, 0, 0]], 'ids': ['int', 'bignum', 'negativenum', 'minus', 'divzero', 'fszero', 'zerozero']}}
