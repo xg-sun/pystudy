@@ -1,7 +1,6 @@
-"""
-__author__ = 'hogwarts_xixi'
-"""
+from decimal import Decimal, ROUND_HALF_UP
 
+import allure
 import pytest
 import yaml
 
@@ -10,7 +9,7 @@ from pythoncode.Calculator import Calculator
 
 # 使用with 读取yaml 文件
 def get_data(level):
-    with open("../data/calc.yml", encoding='utf-8') as f:
+    with open("./datas/data.yml", encoding='utf-8') as f:
         # pip install pyyaml
         datas = yaml.safe_load(f)
         add_datas = datas.get("add")

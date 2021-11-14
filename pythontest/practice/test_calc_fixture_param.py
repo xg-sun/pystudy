@@ -1,6 +1,3 @@
-"""
-__author__ = 'hogwarts_xixi'
-"""
 import logging
 from time import sleep
 
