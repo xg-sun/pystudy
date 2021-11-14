@@ -7,7 +7,7 @@ from pythoncode.Calculator import Calculator
 
 
 def get_datas(name,level):
-    with open("../data/calc.yml",encoding='utf-8') as f:
+    with open("../data/calc.yml", encoding='utf-8') as f:
         all_datas = yaml.safe_load(f)
         datas = all_datas[name][level]['datas']
         ids = all_datas[name][level]['ids']

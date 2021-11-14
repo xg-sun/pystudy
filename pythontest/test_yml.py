@@ -1,7 +1,7 @@
 import yaml
 
 def test_yaml():
-    with open("../data/calc.yml",encoding="utf-8") as f:
+    with open("../data/calc.yml", encoding="utf-8") as f:
         datas = yaml.safe_load(f)
         # print(datas)
         add_datas= datas.get("add")
